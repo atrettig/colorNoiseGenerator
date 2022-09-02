@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Music player</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <h1>Color Noise player</h1>     
+
+    <div class="slide-container">
+        <div class="slider-container">
+
+            <input type="range" min="0" max="50" value="100" class="slider" id="myRange">
+        </div>
+
+    </div>
+
+
+
+    <div class="music-container">
+        <h4 id="title">brown</h4>
+        
+        <audio src="music/BrownianNoise_64kb.mp3" id="audio"></audio>
+        <div class="navigation">
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+
+        </div>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+</html>
