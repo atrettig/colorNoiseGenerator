@@ -12,7 +12,7 @@ const slider_value = document.querySelector('#slider_value')
 slider.oninput = function(){
     const values = [6, 16,26, 40, 51, 64]
 
-    const songs = ['pink','blue', 'white','brown','green', 'orange', 'gray']
+    const songs = ['pink','blue', 'white','brown','black', 'orange', 'gray']
 
     let color = "gray";
     var value = this.value;
