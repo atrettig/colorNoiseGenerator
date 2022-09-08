@@ -3,24 +3,28 @@ const playBtn = document.querySelector('#play')
 const audio = document.querySelector('#audio')
 const title = document.querySelector('#title')
 const slider = document.querySelector('#myRange')
+const slider_value = document.querySelector('#slider_value')
 
 
 
 
 //slider output
 slider.oninput = function(){
-    const values = [10,30,41]
+    const values = [6, 16,26, 40, 51, 64]
 
-    const songs = ['pink','blue', 'white','brown']
+    const songs = ['pink','blue', 'white','brown','green', 'orange', 'gray']
 
-    let color = "brown";
+    let color = "gray";
     var value = this.value;
+    slider_value.innerText = value;
+    
     for (let index = 0; index <= values.length; index++) {
         if (value < values[index]) {
             color = songs[index]
             break
         }
     }
+
     loadSong(color)
 }
 
@@ -35,6 +39,7 @@ slider.oninput = function(){
 function loadSong(song){
     title.innerText = song
     audio.src = `music/${song}.mp3`
+    playSong()
 }
 
 
@@ -71,3 +76,5 @@ playBtn.addEventListener('click', () =>{
         playSong()
     }
 })
+
+
