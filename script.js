@@ -16,7 +16,7 @@ slider.oninput = function(){
 
     let color = "gray";
     var value = this.value;
-    slider_value.innerText = value;
+    // slider_value.innerText = value;
     
     for (let index = 0; index <= values.length; index++) {
         if (value < values[index]) {
@@ -29,10 +29,6 @@ slider.oninput = function(){
 }
 
 
-
-
-// TO DO: need go grab the color from the picker
-// loadSong(songs[])
 
 
 
